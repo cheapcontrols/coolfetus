@@ -1,0 +1,388 @@
+
+colors-used {
+	color: #fff;
+	color: #000;
+    color: #A4DDEB;
+}
+#content h2{
+	text-align: center;
+}
+
+/************************************** Falling fetus ************************************************************************/
+#falling_fetus{
+	height: 300px;
+	margin-bottom: 120px;
+}
+#falling_fetus img{
+	border: 0px;
+	box-shadow: 0 0 0;
+	border-radius: 0;
+	margin: 0;
+}
+#static_image{
+	position: absolute;
+	top:0px;
+	transition: 0s;
+}
+#fall_first{
+	position: absolute;
+	top: -1000px;
+}
+#fall_second{
+	position: absolute !important;
+	top: -1500px;
+}
+#falling_fetus:hover #fall_first{
+	top: 0px;
+	transition: 4s;
+}
+#falling_fetus:hover #fall_second{
+	top: 0px;
+	transition: 4s;
+}
+
+
+/************************************** pick a card ************************************************************************/
+#card_hand{
+	height:300px;
+}
+.cardHand{
+    position: absolute;
+    width: 160px;
+    height: 222px;
+    /*box-sizing: border-box;*/
+    /*margin:  40px auto;*/
+    /*border: 2px solid #666;
+    border-radius: 5px;
+    /*background-color: #888;*/
+}
+.cardHand .card{
+    position: absolute;
+    top: 3px;
+    left: 3px;
+    width: 150px;
+    height: 212px;
+    transition: 0.5s;
+    transform-origin: bottom;
+}
+.cardHand #two{
+    transform:translate(2px,2px);
+}.cardHand #three{
+    transform:translate(4px,4px);
+}.cardHand #four{
+    transform:translate(6px,6px);
+}.cardHand #five{
+    transform:translate(8px,8px);
+}.cardHand #six{
+    transform:translate(10px,10px);
+}
+.cardHand:hover #one{
+    transform:rotate(-45deg) translate(0px,0px);
+}.cardHand:hover #two{
+    transform:rotate(-30deg) translate(2px,2px);
+}.cardHand:hover #three{
+    transform:rotate(-15deg) translate(4px,4px);
+}.cardHand:hover #four{
+    transform:rotate(-0deg) translate(6px,6px);
+}.cardHand:hover #five{
+    transform:rotate(15deg) translate(8px,8px);
+}.cardHand:hover #six{
+    transform:rotate(30deg) translate(10px,10px);
+}
+.cardHand .card:hover{
+    z-index:10;
+}
+
+/************************************** 3D CARD ************************************************************************/
+#card_flip{
+	height:300px;
+	cursor: pointer;
+}
+#threeDCard{
+    position: absolute;
+    width: 160px;
+    height: 222px;
+    /*margin: 40px auto;*/
+    /*box-sizing: border-box;*/
+    /*border: 2px solid #666;
+    border-radius: 5px;
+    background-color: #888;*/
+    z-index: 10;
+}
+#threeDCard #cardFront{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    /*transform-origin: left;*/
+    /*transition: 1s;*/
+}
+#threeDCard #cardFront #imgFront{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    transform-origin: center;
+    transform: rotateY(0deg);
+    transition: 4s;
+    backface-visibility: hidden;
+}
+#threeDCard #cardFront #imgBack{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    transform-origin: center;
+    /*transform: rotate3d(0, 1, 0, 90deg);*/
+    transform: rotateY(180deg);
+    transition: 4s;
+    backface-visibility: hidden;
+}
+#threeDCard #cardFront:hover #imgFront{
+    transform: rotateY(180deg);
+    /*transform: translate3d( 10px ,10px , 50%);*/
+}
+#threeDCard #cardFront:hover #imgBack{
+    transform: rotateY(0deg);
+    /*transform: translate3d( 10px ,10px , 50%);*/
+}
+.imageBackText{
+	display: block;
+	position: absolute;
+	top: -5px;
+	text-align: center;
+	font-size: 2rem;
+	font-weight: bold;
+	line-height: 1em;
+	opacity: 0;
+	transition: opacity 2s ease-in-out;
+}
+#threeDCard #cardFront:hover .imageBackText{
+	opacity: 1;
+} 
+.display{
+	position: absolute;
+	display: inline-block;
+	top: 100px;
+	left: 300px;
+	border:10px solid black;
+}
+#threeDCard #cardInfo{
+    position: absolute;
+    top: 10px;
+    left: 120px;
+    height:20px;
+    width: 20px;
+    background-color: white;
+    border: black 1px solid;
+    border-radius: 50%;
+    text-align: center;
+    cursor: pointer;
+}
+/*#threeDCard #cardBack{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    transform-origin: right;
+    transition: .5s;
+}*/
+/************************************** Fetal Fart ************************************************************************/
+#fart{
+	height:300px;
+}
+#fetal_fart{
+	position: absolute;
+	width: 160px;
+	height: 222px;
+	margin: 40px auto;
+	box-sizing: border-box;
+	border: 2px solid #666;
+	border-radius: 5px;
+	background-image: url('../images/fart/fetal_fart.png');
+	background-size: contain;
+	z-index: 10;
+}
+#fetal_fart:hover{
+	background-image: url('../images/fart/fetal_fart.gif');
+}
+/******************************************  3D Pop Out *********************************************************************/
+#pop-out-headbite{
+	transform-style: preserve-3d;
+}
+#pop-out-headbite img{
+	border:none;
+	border-radius: 0;
+	box-shadow: none;
+	transform: perspective(500px) translateZ(50px);
+}
+#pop-out-headbite #card{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	transform-style: preserve-3d;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	transition: 2s ease-in-out;
+	background-image: url("../images/creepy/3d_headbite_empty.png");
+	background-repeat: no-repeat;
+}
+#pop-out-headbite #card:hover{
+	transform: perspective(500px) rotateY(45deg);
+}
+
+
+/************************************** 3D Vertical Flip *********************************************************************/
+#vert_flip{
+	padding: 3em 0 0 0;
+}
+
+.vert_flip_cards{
+	display: flex;
+	flex-wrap: wrap;
+	position: relative;
+	justify-content: space-around;
+	align-items: center;
+	box-sizing: border-box;
+	margin: 4em 1em;
+}
+.vert_flip_card{
+	position: relative;
+	width: 200px;
+	height: 275px;
+	margin: 2em 0 0 0;
+}
+.vert_flip_card_face{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	transition: 0.5s;
+}
+.vert_flip_card .face1{
+	/* background-color: #333; */
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	z-index: 1;
+	transform-origin: bottom;
+}
+.vert_flip_card .face1 img{
+	max-width: 160px;/* actual image is 160 wide by 222 tall */
+}
+.vert_flip_card .face1 h3{
+	margin: 10px 0 0;
+	color: #128575;
+	text-align: center;
+	font-size: 1.5rem;
+}
+.vert_flip_card:hover .face1{
+	transform: translateY(-100%) rotateX(90deg);
+	/* background:cyan; */
+}
+.vert_flip_card .face2{
+	justify-content: center;
+	align-items: center;
+	border: solid 2px var(--clr-hf_accent);
+	border-radius: 2em;
+	transform-origin: top;
+	transform: translateY(100%) rotatex(90deg);
+}
+.vert_flip_card .face2 h3{
+	text-align: center;
+	font-size: 1.4em;
+	margin: .5em 0 0 0;
+}
+.vert_flip_card .face2 p{
+	padding: 1em;
+	font-size: 1.2em;
+	text-align: justify;
+}
+
+.vert_flip_card:hover .face2{
+	transform: translateY(0%) rotateX(0deg);
+	/* background:cyan; */
+}
+/************************************** Newtons Cradel ************************************************************************/
+
+#newtons_cradel{
+	display: flex;
+	justify-content: center;
+	height:300px;
+	border-top:4px solid black;
+	border-left: 1px solid black;
+	border-right: 1px solid black;
+	border-bottom: 30px solid black;
+	padding: 0 5px 150px;
+	box-sizing: border-box;
+}
+#newtons_cradel span{
+	position: relative;
+	width:4px;
+	background-color: black;
+	height: 100%;
+	margin: 0 28px;
+	transform-origin: top;
+}
+#newtons_cradel span:before{
+	content: '';
+	position: absolute;
+	bottom: -90px;
+	left: -30px;
+	width: 60px;
+	height:100px;
+	/*border: 1px solid black;
+	border-radius: 50%;*/
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+#newtons_cradel span:first-child{
+	animation: animate_first 2s linear infinite;
+}
+#newtons_cradel span:first-child:before{
+	background-image: url("../images/newtons_cradle/surprise_no_border.png");
+}
+@keyframes animate_first{
+	0%{
+		transform: rotate(0deg);
+	}
+	25%{
+		transform: rotate(60deg);
+	}
+	50%{
+		transform: rotate(0deg);
+	}
+	100%{
+		transform: rotate(0deg);
+	}
+}
+#newtons_cradel span:nth-child(2):before{
+	background-image: url("../images/newtons_cradle/4thJuly_no_border.png");
+}
+#newtons_cradel span:nth-child(3):before{
+	background-image: url("../images/newtons_cradle/easter_no_border.png");
+}
+#newtons_cradel span:nth-child(4):before{
+	background-image: url("../images/newtons_cradle/shovel_no_border.png");
+}
+#newtons_cradel span:last-child{
+	animation: animate_last 2s linear infinite 1s;
+}
+#newtons_cradel span:last-child:before{
+	background-image: url("../images/newtons_cradle/tennis_no_border.png");
+}
+@keyframes animate_last{
+	0%{
+		transform: rotate(0deg);
+	}
+	25%{
+		transform: rotate(-60deg);
+	}
+	50%{
+		transform: rotate(0deg);
+	}
+	100%{
+		transform: rotate(0deg);
+	}
+}

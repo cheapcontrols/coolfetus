@@ -1,0 +1,270 @@
+colors-used {
+	color: #fff;
+	color: #000;
+	color: #A4DDEB;
+	color: #128575;/* footer and accent*/
+}
+
+/*  Defaluts for entrier page*/
+*,*::after,*::before{
+	margin:0;
+	padding:0;
+	box-sizing: border-box;
+}
+
+/*  CSS variables or custom properties */
+:root{
+	--ff-primary: arial;
+	--ff-secondary: Helvetica;
+	
+	--fw-reg: 300;
+	--fw-bold: 900;
+
+	--clr-light: #dddddd;
+	--clr-lt-blue: #A4DDEB; /* */
+	--clr-hf_accent: #128575;/* footer and accent*/
+	--clr-accent: #772D38;
+
+	--fs-h1: 3rem;
+	--fs-h2: 2.25rem;
+	--fs-h3: 1.25rem;
+	--fs-body: 1rem;
+
+	--bs: 0.25em 0.25em 0.75em rgba(0,0,0,.25),
+				0.125em 0.125em 0.25em rgba(0,0,0,.15);
+}
+@media (min-width: 800px){
+	:root{
+		--fs-h1: 4.5rem;
+		--fs-h2: 3.75rem;
+		--fs-h3: 1.5rem;
+		--fs-body: 1.125rem;
+	}
+}
+
+/*   END CSS variables or custom properties */
+
+
+
+
+
+* {
+	padding: 0;
+	margin: 0;
+}
+
+body {
+	background: url(../images/site/bg_img.png);
+	color: #000;
+	font: 75%/1.5em Arial, Helvetica, sans-serif;
+	margin-bottom: 20px;
+	max-width: 960px;
+	margin: auto;
+}
+
+header {
+	background: url(../images/site/header.png) no-repeat right;    
+	float: left;
+	height: 120px;
+	width: 960px;
+	border: none;
+}
+
+img{
+	position: relative;
+	display: block;
+	text-align: center;
+	margin: 20px auto;
+	border: 2px solid #777777;
+	border-radius: 15px;
+	box-shadow: 3px 3px 3px #777777;
+}
+
+header a {
+	background: url(../images/site/cool_fetus_img.png) no-repeat;
+	background-size: contain;
+	cursor: pointer;
+	display: block;
+	height: 90px;
+	width: 600px;
+	margin: 10px 0 0 0;
+}
+#social{
+	position: absolute;
+	top:10px;
+	right:10px;
+	display: flex;
+	width: 125px;
+	justify-content: center;
+	height: auto;
+}
+#social a{
+	width:30px;
+	height:25px;
+	background-position: center;
+	background-repeat: no-repeat;
+	/*box-shadow: #000 10px 10px 10px;*/
+}
+#social a:nth-child(1) {
+    background-image: url("../images/site/YouTube_small.png");
+}#social a:nth-child(2) {
+    background-image: url("../images/site/YouTube_small.png");
+}
+
+
+nav {
+	display:inline-block;
+	position:relative;
+	width: 100%;
+	background: url(../images/site/nav_body.png);
+	padding-bottom: 20px;
+}
+
+nav ul {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+	list-style: none;
+	height: auto;
+	margin: 0 20px;
+	padding: 0;
+	border: none;
+}
+nav li{
+	width:auto;
+	margin: 0 20px;
+
+}
+
+nav ul li a {
+	border: none;
+	height: 40px;
+	display: inline-block;
+}
+nav #index_nav{
+	background: url(../images/site/menu_home.png) no-repeat;
+	width: 75px;
+}
+nav #index_nav_sel{
+	background: url(../images/site/menu_home_sel.png) no-repeat;
+	width: 75px;
+}
+nav #play_nav{
+	background: url(../images/site/menu_playhouse.png) no-repeat;
+	width: 150px;
+}
+nav #play_nav_sel{
+	background: url(../images/site/menu_playhouse_sel.png) no-repeat;
+	width: 150px;
+}
+nav #circus_nav{
+	background: url(../images/site/menu_circus.png) no-repeat;
+	width: 85px;
+}
+nav #circus_nav_sel{
+	background: url(../images/site/menu_circus_sel.png) no-repeat;
+	width: 85px;
+}
+nav #about_nav{
+	background: url(../images/site/menu_about.png) no-repeat;
+	width: 75px;
+}
+nav #about_nav_sel{
+	background: url(../images/site/menu_about_sel.png) no-repeat;
+	width: 75px;
+}
+nav #contact_nav{
+	background: url(../images/site/menu_contact.png) no-repeat;
+	width: 100px;
+}
+nav #contact_nav_sel{
+	background: url(../images/site/menu_contact_sel.png) no-repeat;
+	width: 100px;
+}
+
+nav ul li a:hover {
+	/*background: url(../images/site/button_hov.png) no-repeat;
+	width: 109px;
+	height: 24px;*/
+}
+
+#content {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	column-gap: 49px;
+	justify-content: space-evenly;
+	background: url(../images/site/body_bg.png);
+	min-height: 600px;
+}
+
+.fetal_card{
+	position: relative;
+	height: 212px;
+	width: 160px;
+	margin: 0px auto;
+	border: 0px solid green;
+}
+
+.width_400{
+	width: 400px;
+	z-index: 1;
+}
+.width_400 h2{
+	height: 30px;
+	text-align: center;
+	line-height: 30px;
+}
+
+.width_600{
+	width: 600px;
+}
+.width_100p{
+	width: 100%;
+}
+
+
+footer {
+	background: url(../images/site/foot_img.png) no-repeat;
+	width: 100vw;
+	height: 195px;
+	clear: both;
+	padding: 110px 0 0 0;
+}
+
+footer p {
+	font-size: 1.3em;
+	color: #A4DDEB;
+	padding: 0 0 0 25px;
+}
+
+/**************   Smaller than 950 px  ************************/
+@media screen and (max-width: 950px){
+	header {
+		background-image: none;
+		width: 100vw;
+	}
+	header a{
+		margin: 10px auto 0 auto;
+	}
+}	
+/**************   Smaller than 800 px  ************************/
+@media screen and (max-width: 800px){
+	#about .width_600{
+		width: 400px;
+	}
+}	
+
+/**************   Smaller than 600 px  ************************/
+@media screen and (max-width: 600px){
+	header{
+		text-align: center;
+	}
+	header a{
+		width: 400px;
+	}
+	#about .width_600{
+		width: 300px;
+	}
+}

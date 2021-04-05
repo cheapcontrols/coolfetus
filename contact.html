@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="Description" content="The Fetal Institute">
+		<meta name="author" content="theweeklystupid.com">
+		<meta name="Copyright" content="Copyright (c) 2019 theweeklystupid, all rights reserved.">
+		<title>Coolfetus - Contact</title>
+		<link rel="stylesheet" href="css/default.css" />
+		<link rel="stylesheet" href="css/contact.css" />
+	</head>
+	<body id="contact">
+		<header>
+			<h1><a href="index.html"> </a></h1>
+			<div id="social"></div>
+		</header>
+		<nav id="main_nav"><!-- navigation is supplied with javascript --></nav>
+		<section id="content">
+			<aside id="dr_b_message" class="width_600">
+				<img src="images/contact/drb_contact.png" alt=""/>
+			</aside>
+			<form id="contact_form">
+				<ul>
+					<li>
+						<label for="contact_name" id="name_label"><img src="images/contact/menu_name.png" alt="Your Name"> </label>
+						<input type="text" id="contact_name" name="contact_name" placeholder=""/>
+					</li>
+					<li>
+						<label for="contact_email" id="email_label"><img src="images/contact/menu_email.png" alt="Your Email"> </label>
+						<input type="text" id="contact_email" name="contact_email" placeholder=""/>
+					</li>
+					<li>
+						<label for="contact_comment" id="comment_label"><img src="images/contact/menu_comment.png" alt="Your Comment"> </label>
+						<textarea type="text" id="contact_comment" name="contact_comment" placeholder="" onkeyup="adjust_textarea(this)"></textarea>
+					</li>
+					<li>
+						<label for="contact_verify" id="verify_label"><img src="images/contact/menu_verify.png" alt="Enter Beakman"> </label>
+						<input type="text" id="contact_verify" name="contact_verify" placeholder="My Last Name"/>
+					</li>
+					<li>
+						<input type="button" id="sendComment" onclick="SEND_EMAIL()" value="Submit Comment"/>
+					</li>
+				</ul>
+			</form>
+		</section>
+		<!-- end Content -->
+		<footer>
+			<p>&copy; 2019 The Fetal Institute : All rights reserved.</p>
+		</footer>
+	</body>
+	<script type='text/javascript' src='js/default.js'></script>
+	<script type='text/javascript' src='js/contact.js'></script>
+</html>

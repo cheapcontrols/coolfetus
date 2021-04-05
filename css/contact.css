@@ -1,0 +1,90 @@
+colors-used {
+	color: #fff;
+	color: #000;
+	color: #A4DDEB;
+}
+
+#dr_b_message{
+	height: auto;
+	margin:20px 0 0 0;
+}
+#dr_b_message img{
+	width: 600px;
+	object-fit: cover;
+}
+#contact_form{
+	position: relative;
+	margin: 0 auto;
+	border-radius: 5px;
+	color: black;
+}
+#contact_form ul{
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+#contact_form li{
+	display: flex;
+	padding: 40px 0 0 0;
+}
+#contact_form li label{
+	position: relative;
+	display: inline-block;
+	width: 150px;
+	height: 40px;
+	text-align: right;
+}
+#contact_form li img{
+	position: relative;
+	display: inline-block;
+	margin: 0 10px 0 0;
+	text-align: right;
+	height: 100%;
+	width: auto;
+}
+#contact_form input, #contact_form textarea{
+	position: relative;
+	display: inline-block;
+	width: 350px;
+	background-color: transparent;
+	border: 0px;
+	border-bottom: 3px solid #A4DDEB;
+	border-radius: 0 0 10px 0;
+	height: 37px;
+	line-height: 37px;
+	font-size: 25px;
+}
+#contact_form input[type=button]{
+	border: 3px solid #A4DDEB;
+	border-radius: 10px;
+	height: 50px;
+	box-sizing: border-box;
+	line-height: 50px;
+	background-color: rgb(164, 233, 235, 0.3);
+}
+#sendComment{
+	cursor: pointer;
+}
+
+/**************   Smaller than 700 px  ************************/
+@media screen and (max-width: 700px){
+	#dr_b_message img{
+		width: 400px;
+		object-fit: cover;
+	}
+	#contact_form li{
+		padding: 20px 0 0 0;
+	}
+	#contact_form li label{
+		width: 100px;
+		height: 30px;
+	}
+	#contact_form input, #contact_form textarea{
+		width: 200px;
+		background-color: transparent;
+		border-bottom: 2px solid #A4DDEB;
+		height: 25px;
+		line-height: 25px;
+		font-size: 20px;
+	}
+}

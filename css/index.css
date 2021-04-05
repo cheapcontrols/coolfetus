@@ -1,0 +1,73 @@
+/*
+
+
+*/
+colors-used {
+	color: #fff;
+	color: #000;
+	color: #A4DDEB;
+}
+
+/**************** Fetal Facts *******************/
+#fetal_facts{
+	border:0px solid orange;
+}
+#fetal_facts h1{
+	position: relative;
+	margin: 30px 0 0 0;
+	height: 40px;
+	line-height: 40px;
+	text-align: center;
+	width: 100%;
+	font-size: 35px;
+	text-decoration: underline;
+	color: #A4DDEB;
+	z-index: 20;
+}
+#fetal_facts p{
+	position: relative;
+	margin: 20px 0 0 0;
+	padding: 0 40px;
+	line-height: 30px;
+	font-size: 25px;
+	text-align: center;
+	color: #444444;
+	z-index: 20;
+}
+/**************** Fetal Facts *******************/
+#fetal_intro{
+	border:0px solid orange;
+}
+#fetal_intro h1{
+	position: relative;
+	margin: 30px 0 0 0;
+	height: 30px;
+	line-height: 30px;
+	text-align: center;
+	width: 100%;
+	font-size: 25px;
+	text-decoration: underline;
+	color: #A4DDEB;
+	z-index: 20;
+}
+#fetal_intro p{
+	position: relative;
+	margin: 20px 0 0 0;
+	padding: 0 40px;
+	line-height: 25px;
+	font-size: 20px;
+	text-align: center;
+	color: #444444;
+	z-index: 20;
+}
+/********************** Falling Card *******************/
+#set{
+	position: relative;
+	margin: 40px auto;
+}
+#fall{
+	position: absolute;
+	margin: 0;
+	top:-1000px;
+	transition: 4s;
+}
