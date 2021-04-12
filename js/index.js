@@ -5,7 +5,7 @@ document.getElementById("fall").style.top = "0px";
 const fetusImg = ['building','burglerjar','camera','canada','candlestick','castle',
 			'chef','coffee','cookie','crutch','deaf','disguise','disgust','dogcatch'];
 
-const selectedImage = fetusImg[Math.floor(Math.random()*15)];
+const selectedImage = fetusImg[Math.floor(Math.random()*14)];
 const imageString = "images/index/" + selectedImage + ".gif"
 
 console.log(imageString);
